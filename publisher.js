@@ -1,6 +1,7 @@
 import amqp, { connect } from "amqplib"
 
-const msg = {number : 19};
+const num = process.argv[2] || 10;
+const msg = {number : num};
 
 start_connection();
 
